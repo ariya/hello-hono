@@ -23,7 +23,8 @@ bun index.js
 
 Run with Deno:
 ```
-deno --unstable-detect-cjs --allow-net --allow-env index.js
+deno install
+deno task start
 ```
 
 Run with Podman:

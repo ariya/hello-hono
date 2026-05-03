@@ -20,7 +20,9 @@ jobs:
 
       - run: deno --version
 
-      - run: deno --unstable-detect-cjs --allow-net --allow-env index.js &
+      - run: deno install --frozen
+
+      - run: deno task start &
 
       - name: Run the health check validation
         run: while ! curl -s 'http://localhost:3000/health' | grep 'OK'; do sleep 1; done
