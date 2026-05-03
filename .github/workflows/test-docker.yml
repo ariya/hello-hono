@@ -14,9 +14,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v6
 
-      - run: docker build -t hello-nodejs .
+      - run: docker build -t hello-hono .
 
-      - run: docker run -d -p 3000:3000 hello-nodejs
+      - run: docker run -d -p 3000:3000 hello-hono
 
       - name: Run the health check validation
         run: while ! curl -s 'http://localhost:3000/health' | grep 'OK'; do sleep 1; done

@@ -1,4 +1,4 @@
-app = 'hello-nodejs'
+app = 'hello-hono'
 primary_region = 'sjc'
 
 [build]
