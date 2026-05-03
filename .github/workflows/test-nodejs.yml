@@ -22,7 +22,9 @@ jobs:
         with:
           nodejs-version: ${{ matrix.nodejs-version }}
 
-      - run: node index.js &
+      - run: npm ci
+
+      - run: npm start &
 
       - name: Run the health check validation
         run: while ! curl -s 'http://localhost:3000/health' | grep 'OK'; do sleep 1; done

@@ -12,7 +12,8 @@ The server listens on `localhost:3000`.
 
 Run with Node.js:
 ```
-node index.js
+npm install
+npm start
 ```
 
 Run with Bun:
