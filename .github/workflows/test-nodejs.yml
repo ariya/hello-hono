@@ -12,7 +12,7 @@ jobs:
     timeout-minutes: 5
     strategy:
       matrix:
-        nodejs-version: [24, 22, 20, 18]
+        nodejs-version: [24, 22, 20]
     steps:
       - name: Checkout code
         uses: actions/checkout@v6

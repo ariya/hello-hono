@@ -1,12 +1,12 @@
 {
   "version": "5",
   "specifiers": {
-    "npm:@hono/node-server@~1.19.14": "1.19.14_hono@4.12.18",
+    "npm:@hono/node-server@~2.0.12": "2.0.12_hono@4.12.18",
     "npm:hono@~4.12.18": "4.12.18"
   },
   "npm": {
-    "@hono/node-server@1.19.14_hono@4.12.18": {
-      "integrity": "sha512-GwtvgtXxnWsucXvbQXkRgqksiH2Qed37H9xHZocE5sA3N8O8O8/8FA3uclQXxXVzc9XBZuEOMK7+r02FmSpHtw==",
+    "@hono/node-server@2.0.12_hono@4.12.18": {
+      "integrity": "sha512-eWpQYr67tqJLeaSUl0Q+TquuYfUdTibpOJlUMV2FfUP7+KqCC5TufnwnlXL6mobZBJbGAYRd7ZvEBDCbLInjhg==",
       "dependencies": [
         "hono"
       ]
@@ -18,7 +18,7 @@
   "workspace": {
     "packageJson": {
       "dependencies": [
-        "npm:@hono/node-server@~1.19.14",
+        "npm:@hono/node-server@~2.0.12",
         "npm:hono@~4.12.18"
       ]
     }
