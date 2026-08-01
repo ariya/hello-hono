@@ -3,7 +3,6 @@
 A minimal HTTP server built with [Hono](https://hono.dev).
 
 [![Test with Nodejs](https://github.com/ariya/hello-hono/actions/workflows/test-nodejs.yml/badge.svg)](https://github.com/ariya/hello-hono/actions/workflows/test-nodejs.yml)
-[![Test with Bun](https://github.com/ariya/hello-hono/actions/workflows/test-bun.yml/badge.svg)](https://github.com/ariya/hello-hono/actions/workflows/test-bun.yml)
 [![Test with Deno](https://github.com/ariya/hello-hono/actions/workflows/test-deno.yml/badge.svg)](https://github.com/ariya/hello-hono/actions/workflows/test-deno.yml)
 [![Test with Podman](https://github.com/ariya/hello-hono/actions/workflows/test-podman.yml/badge.svg)](https://github.com/ariya/hello-hono/actions/workflows/test-podman.yml)
 [![Test with Docker](https://github.com/ariya/hello-hono/actions/workflows/test-docker.yml/badge.svg)](https://github.com/ariya/hello-hono/actions/workflows/test-docker.yml)
@@ -14,11 +13,6 @@ Run with Node.js:
 ```
 npm install
 npm start
-```
-
-Run with Bun:
-```
-bun index.js
 ```
 
 Run with Deno:
