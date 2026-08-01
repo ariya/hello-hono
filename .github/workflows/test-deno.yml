@@ -27,3 +27,20 @@ jobs:
       - name: Run the health check validation
         run: while ! curl -s 'http://localhost:3000/health' | grep 'OK'; do sleep 1; done
         timeout-minutes: 3
+
+  container:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 5
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v7
+
+      - name: Build the Deno container image
+        run: docker build -f Dockerfile.deno -t hello-hono-deno .
+
+      - name: Run the container
+        run: docker run -d --rm --name hello-hono-deno -p 3000:3000 hello-hono-deno
+
+      - name: Run the health check validation
+        run: while ! curl -s 'http://localhost:3000/health' | grep 'OK'; do sleep 1; done
+        timeout-minutes: 3

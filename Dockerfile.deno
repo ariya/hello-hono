@@ -1,0 +1,12 @@
+FROM denoland/deno:alpine-2.9.4
+
+WORKDIR /app
+
+COPY package.json deno.json deno.lock ./
+RUN deno install --frozen
+
+COPY . .
+
+EXPOSE 3000
+
+CMD ["deno", "task", "start"]
