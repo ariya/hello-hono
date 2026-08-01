@@ -9,6 +9,7 @@
   "scripts": {
     "start": "node index",
     "format": "oxfmt \"**/*.{js,json,md}\"",
+    "typecheck": "oxlint --type-aware",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
@@ -16,6 +17,8 @@
     "hono": "~4.12.33"
   },
   "devDependencies": {
-    "oxfmt": "~0.60.0"
+    "oxfmt": "~0.60.0",
+    "oxlint": "~1.75.0",
+    "oxlint-tsgolint": "~7.0.2001"
   }
 }
