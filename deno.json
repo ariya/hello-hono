@@ -1,0 +1,13 @@
+{
+  "nodeModulesDir": "auto",
+  "permissions": {
+    "default": {
+      "env": ["PORT", "HOST"],
+      "net": ["0.0.0.0", "127.0.0.1"]
+    }
+  },
+  "tasks": {
+    "start": "deno run --no-prompt -P index.js",
+    "check": "deno check index.js"
+  }
+}
