@@ -2,8 +2,9 @@ FROM denoland/deno:alpine-2.9.4
 
 WORKDIR /app
 
-COPY package.json deno.json deno.lock ./
-RUN deno install --frozen
+COPY deno.json deno.lock package.json ./
+COPY index.js ./
+RUN deno cache --frozen index.js
 
 COPY . .
 
