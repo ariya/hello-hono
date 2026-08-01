@@ -2,6 +2,7 @@
   "version": "5",
   "specifiers": {
     "npm:@hono/node-server@~2.0.12": "2.0.12_hono@4.12.33",
+    "npm:consola@~3.4.2": "3.4.2",
     "npm:hono@~4.12.33": "4.12.33",
     "npm:oxfmt@0.60": "0.60.0",
     "npm:oxlint-tsgolint@~7.0.2001": "7.0.2001",
@@ -234,6 +235,9 @@
       "os": ["win32"],
       "cpu": ["x64"]
     },
+    "consola@3.4.2": {
+      "integrity": "sha512-5IKcdX0nnYavi6G7TtOhwkYzyjfJlatbjMjuLSfE2kYT5pMDOilZ4OvMhi637CcDICTmz3wARPoyhqyX1Y+XvA=="
+    },
     "hono@4.12.33": {
       "integrity": "sha512-+SwvkaiJtxsiPjhy9LivY/1m7UsNqCJetM1BrZl9A5DkQhlbHQDU730mMiDPWjnoCYOM8Chf3WrCJw27kNTPFQ=="
     },
@@ -316,6 +320,7 @@
     "packageJson": {
       "dependencies": [
         "npm:@hono/node-server@~2.0.12",
+        "npm:consola@~3.4.2",
         "npm:hono@~4.12.33",
         "npm:oxfmt@0.60",
         "npm:oxlint-tsgolint@~7.0.2001",

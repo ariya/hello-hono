@@ -1,3 +1,4 @@
+const { consola } = require('consola/basic');
 const { Hono } = require('hono');
 const { serve } = require('@hono/node-server');
 const { secureHeaders } = require('hono/secure-headers');
@@ -14,4 +15,4 @@ const port = process.env.PORT || 3000;
 const hostname = process.env.HOST || '127.0.0.1';
 
 serve({ fetch: app.fetch, port, hostname });
-console.log('Listening on', `${hostname}:${port}`);
+consola.log('Listening on', `${hostname}:${port}`);
