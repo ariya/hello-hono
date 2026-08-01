@@ -2,14 +2,14 @@
   "version": "5",
   "specifiers": {
     "npm:@hono/node-server@~2.0.12": "2.0.12_hono@4.12.18",
-    "npm:hono@~4.12.18": "4.12.18",
+    "npm:hono@~4.12.33": "4.12.33",
     "npm:oxfmt@0.60": "0.60.0"
   },
   "npm": {
     "@hono/node-server@2.0.12_hono@4.12.18": {
       "integrity": "sha512-eWpQYr67tqJLeaSUl0Q+TquuYfUdTibpOJlUMV2FfUP7+KqCC5TufnwnlXL6mobZBJbGAYRd7ZvEBDCbLInjhg==",
       "dependencies": [
-        "hono"
+        "hono@4.12.18"
       ]
     },
     "@oxfmt/binding-android-arm-eabi@0.60.0": {
@@ -110,6 +110,9 @@
     "hono@4.12.18": {
       "integrity": "sha512-RWzP96k/yv0PQfyXnWjs6zot20TqfpfsNXhOnev8d1InAxubW93L11/oNUc3tQqn2G0bSdAOBpX+2uDFHV7kdQ=="
     },
+    "hono@4.12.33": {
+      "integrity": "sha512-+SwvkaiJtxsiPjhy9LivY/1m7UsNqCJetM1BrZl9A5DkQhlbHQDU730mMiDPWjnoCYOM8Chf3WrCJw27kNTPFQ=="
+    },
     "oxfmt@0.60.0": {
       "integrity": "sha512-fViX6i+gJuZWY+jI/fnR6WRbRj70GZ9RlCd30MygJrHTUNc4DxvKHWw8vBjMjffv3PgU5qWDR0AzmojQByqaZA==",
       "dependencies": [
@@ -146,7 +149,7 @@
     "packageJson": {
       "dependencies": [
         "npm:@hono/node-server@~2.0.12",
-        "npm:hono@~4.12.18",
+        "npm:hono@~4.12.33",
         "npm:oxfmt@0.60"
       ]
     }

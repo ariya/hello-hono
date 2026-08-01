@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@hono/node-server": "~2.0.12",
-    "hono": "~4.12.18"
+    "hono": "~4.12.33"
   },
   "devDependencies": {
     "oxfmt": "~0.60.0"
