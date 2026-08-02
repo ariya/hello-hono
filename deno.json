@@ -8,6 +8,8 @@
   },
   "tasks": {
     "start": "deno run --no-prompt -P index.js",
-    "check": "deno check index.js"
+    "check": "deno check index.js",
+    "format": "oxfmt \"**/*.{js,json,md}\"",
+    "typecheck": "oxlint --type-aware"
   }
 }
