@@ -1,7 +1,7 @@
-const { consola } = require('consola/basic');
-const { Hono } = require('hono');
-const { serve } = require('@hono/node-server');
-const { secureHeaders } = require('hono/secure-headers');
+import { consola } from 'consola/basic';
+import { Hono } from 'hono';
+import { serve } from '@hono/node-server';
+import { secureHeaders } from 'hono/secure-headers';
 
 const app = new Hono();
 
