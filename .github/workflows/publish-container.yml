@@ -33,7 +33,9 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
+          tags: |
+            ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
+            ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
 
   test-container:
     runs-on: ubuntu-22.04
@@ -42,7 +44,7 @@ jobs:
 
     steps:
       - name: Run the container
-        run: docker run -d --rm --name hello-hono -p 3000:3000 ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
+        run: docker run -d --rm --name hello-hono -p 3000:3000 ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
 
       - name: Run the health check validation
         run: while ! curl -s 'http://localhost:3000/health' | grep 'OK'; do sleep 1; done
