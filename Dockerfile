@@ -3,7 +3,7 @@ FROM node:24.19.0-alpine3.24
 WORKDIR /app
 
 COPY package.json package-lock.json ./
-RUN npm ci
+RUN npm ci --omit=dev
 
 COPY --chown=root:root . .
 
