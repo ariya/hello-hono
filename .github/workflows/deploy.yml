@@ -23,7 +23,7 @@ jobs:
         run: git log --oneline -n 5
 
       - name: Deploy to Dokku
-        uses: dokku/github-action@master
+        uses: dokku/github-action@v1.10.0
         with:
           git_remote_url: ssh://dokku@${{ secrets.APP_URL }}/hello-hono
           ssh_private_key: ${{ secrets.DOKKU_SSH_PRIVATE_KEY }}
