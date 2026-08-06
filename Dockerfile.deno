@@ -6,7 +6,9 @@ COPY deno.json deno.lock package.json ./
 COPY index.js ./
 RUN deno cache --frozen index.js
 
-COPY . .
+COPY --chown=root:root . .
+
+USER deno
 
 EXPOSE 3000
 
