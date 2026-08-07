@@ -15,15 +15,15 @@ jobs:
     timeout-minutes: 5
     strategy:
       matrix:
-        nodejs-version: [24, 22, 20]
+        node-version: [24, 22, 20]
     steps:
       - name: Checkout code
         uses: actions/checkout@v7
 
-      - name: Setup Node.js ${{ matrix.nodejs-version }}
+      - name: Setup Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v7
         with:
-          nodejs-version: ${{ matrix.nodejs-version }}
+          node-version: ${{ matrix.node-version }}
 
       - run: npm ci
 
